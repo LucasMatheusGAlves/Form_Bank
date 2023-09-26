@@ -97,6 +97,8 @@ body {
     width: 100%;
     padding: 1rem;
     margin: .5rem 0;
+    width: -webkit-fill-available;
+    width: 100%;
 
 }
 
@@ -182,12 +184,6 @@ body {
    flex-basis: calc(100% / 2 - 10px);
 }
 
-.formulario__camera video, .formulario__mensagem canvas {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
 @media screen and (max-width: 900px) {
     .formulario {
         width: 100%;
@@ -207,5 +203,11 @@ body {
     
     .formulario__botao--ancora {
         width: 100%;
+    }
+
+    .formulario__camera video, .formulario__mensagem canvas {
+        width: 100%;
+        height: 350px;
+        object-fit: contain;
     }
 }
